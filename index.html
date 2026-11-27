@@ -1,61 +1,193 @@
 <!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Interface Explicativa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
-    <style>
-        .caja1 {
-            background-color: #8B57CA;
-            height: 150px;
-        }
-        .caja2 {
-            background-color: #7A8BE1;
-            height: 900px;
-        }
-        .caja3 { 
-            background-color: #FC8EBE;
-            height: 900px;
-        }
-        .caja4 {
-            background-color: #7c0080;
-            height: 200px;
-        }
-    </style>
-  </head>
-  <body>
-    <h1 class="text-center">Mi Página Web</h1>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja1">
-                <!-- As a link -->
-                    <nav class="navbar bg-body-tertiary">
-                      <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Paula Bustos</a>
-                  </div>
-                </nav>                
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 caja2">
-                <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
-                      <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
-                      <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
-                      <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
-                      <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
-                      <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
-                      <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
-                </div>
-            </div>
-            <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9 caja3">Viewport</div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja4">
-                Soy Footer
-            </div>
-        </div>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interface Explicativa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+  <style>
+    .caja1 {
+      background-color: #8B57CA;
+      height: 150px;
+    }
+
+    .caja2 {
+      background-color: #7A8BE1;
+      height: 900px;
+    }
+
+    .caja3 {
+      background-color: #7c0080;
+      height: 900px;
+    }
+
+    .caja4 {
+      background-color: #FC8EBE;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="text-center">Evidencias</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja1">
+        <!-- As a link -->
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Paula</a>
+          </div>
+        </nav>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
-  </body>
+    <div class="row">
+      <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 caja2">
+        <!--ACA PONGO LOS BOTONEs-->
+        <div class="nav flex-column nav-pills btn-group-vertical w-100" id="menu-evidencias" role="tablist"
+          aria-orientation="vertical">
+
+          <button class="nav-link btn active" id="tab-investigacion" data-bs-toggle="pill"
+            data-bs-target="#panel-investigacion" type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Investigación
+          </button>
+
+          <button class="nav-link btn" id="tab-brief" data-bs-toggle="pill" data-bs-target="#panel-brief" type="button"
+            role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Brief
+          </button>
+
+          <button class="nav-link btn" id="tab-concepto" data-bs-toggle="pill" data-bs-target="#panel-concepto"
+            type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Creación de Concepto e Idea
+          </button>
+
+          <button class="nav-link btn" id="tab-producto" data-bs-toggle="pill" data-bs-target="#panel-producto"
+            type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Producto
+          </button>
+
+          <button class="nav-link btn" id="tab-personaje" data-bs-toggle="pill" data-bs-target="#panel-personaje"
+            type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Diseño de Personaje
+          </button>
+
+          <button class="nav-link btn" id="tab-boceto" data-bs-toggle="pill" data-bs-target="#panel-boceto"
+            type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Boceto/Sketch
+          </button>
+
+          <button class="nav-link btn" id="tab-wireframes" data-bs-toggle="pill" data-bs-target="#panel-wireframes"
+            type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Wireframes
+          </button>
+
+          <button class="nav-link btn" id="tab-mockups" data-bs-toggle="pill" data-bs-target="#panel-mockups"
+            type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Mockups
+          </button>
+
+          <button class="nav-link btn" id="tab-prototipos" data-bs-toggle="pill" data-bs-target="#panel-prototipos"
+            type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Prototipos
+          </button>
+
+          <button class="nav-link btn" id="tab-manual-de-marca" data-bs-toggle="pill"
+            data-bs-target="#panel-manual-de-marca" type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Manual de Marca
+          </button>
+
+          <button class="nav-link btn" id="tab-diseno-de-personaje" data-bs-toggle="pill"
+            data-bs-target="#panel-diseno-de-personaje" type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Diseño de Personaje
+          </button>
+          <button class="nav-link btn" id="tab-portafolio-web-disenador" data-bs-toggle="pill" data-bs-target="#panel-portafolio-web-disenador"
+            type="button" role="tab"
+            style="--bs-nav-link-color: #ECDBEB; --bs-nav-link-hover-color: #ECDBEB; --bs-nav-pills-link-active-color: #ECDBEB; --bs-nav-pills-link-active-bg: #7c0080; border: 1px solid #7c0080; border-radius: 0;">
+            Portafolio Web Diseñador
+          </button>
+        </div>
+      </div>
+
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10 caja3">
+        <div class="tab-content" id="contenido-evidencias">
+
+          <div class="tab-pane fade show active" id="panel-investigacion" role="tabpanel">
+            <iframe src="pdf/Investigación Portafolio.pdf" width="100%" height="900px" title="Investigación"
+              loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-brief" role="tabpanel">
+            <iframe src="pdf/Mi brief.pdf" width="100%" height="900px" title="Brief" loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-concepto" role="tabpanel">
+            <iframe src="/ruta/concepto.pdf" width="100%" height="600px" title="Creación de Concepto e Idea"
+              loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-producto" role="tabpanel">
+            <iframe src="/ruta/producto.pdf" width="100%" height="600px" title="Producto" loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-personaje" role="tabpanel">
+            <iframe src="/ruta/personaje.pdf" width="100%" height="600px" title="Diseño de Personaje"
+              loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-boceto" role="tabpanel">
+            <iframe src="/ruta/boceto.pdf" width="100%" height="600px" title="Boceto/Sketch" loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-wireframes" role="tabpanel">
+            <iframe src="/ruta/wireframes.pdf" width="100%" height="600px" title="Wireframes" loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-mockups" role="tabpanel">
+            <iframe src="/ruta/mockups.pdf" width="100%" height="600px" title="Mockups" loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-prototipos" role="tabpanel">
+            <iframe src="/ruta/prototipos.pdf" width="100%" height="600px" title="Prototipos" loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-manual-de-marca" role="tabpanel">
+            <iframe src="pdf/Manual de Marca.pdf" width="100%" height="600px" title="Manual de Marca"
+              loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-diseno-de-personaje" role="tabpanel">
+            <iframe src="/ruta/disenador.pdf" width="100%" height="600px" title="Diseñador" loading="lazy"></iframe>
+          </div>
+
+          <div class="tab-pane fade" id="panel-portafolio-web-disenador" role="tabpanel">
+            <iframe src="/ruta/disenador.pdf" width="100%" height="600px" title="Diseñador" loading="lazy"></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja4">Soy Footer</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
